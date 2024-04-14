@@ -1,5 +1,5 @@
 # Output
-![Homepage](assets\page1.png)
+![Homepage](https://github.com/SharathHebbar/React-MUI/blob/main/assets/page1.png)
 
 
 # About the Framework
