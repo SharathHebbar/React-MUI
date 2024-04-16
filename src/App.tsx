@@ -9,24 +9,32 @@ import {
 } from 'react-router-dom'
 
 import InputHandler from './components/InputHandler'
+import DataDisplay from './components/DataDisplay'
 
 function App() {
 
   return (
     <>
     <h1>Practicing Material UI with React</h1>
-      <Router>
-        <Routes>
-          <Route 
-            path='/input_handler'
-            element={<InputHandler />}
-          >
-          </Route>
-        </Routes>
-      </Router>
-      <div>
-        For Input Handler follow this path: <a href="http://localhost:5173/input_handler">Input Handler</a>
-      </div>
+    <div>
+        For Input Handler follow this path: <a href="/input_handler">Input Handler</a><br /><br />
+        For Display Element follow this path: <a href="/display_element">Display Element</a><br /><br />
+    </div>
+    <hr />
+    <Router>
+      <Routes>
+        <Route 
+          path='/input_handler'
+          element={<InputHandler />}
+        >
+        </Route>
+        <Route 
+          path='/display_element'
+          element={<DataDisplay />}
+        >
+        </Route>
+      </Routes>
+    </Router>
     </>
   )
 }

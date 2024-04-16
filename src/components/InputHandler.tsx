@@ -2,18 +2,18 @@
 
 import { useState } from 'react'
 
-import {Button_demo, BasicButtonGroup} from "./components/Button_demo"
-import ComboBox from './components/AutoComplete'
-import TextBox from './components/TextBox'
-import {Checkboxes, CheckboxLabels, IconCheckboxes} from './components/Checkboxall'
-import FloatingActionButtonExtendedSize from './components/Floating'
-import CustomizedRadios from './components/Radio_button'
-import HoverRating from './components/Ratings'
-import { MultipleSelect, MultipleSelectChip, DialogSelect } from './components/Select_box'
-import { MusicPlayerSlider, CustomizedSlider } from './components/Sliders'
-import CustomizedSwitches from './components/Switches'
-import TransferList from './components/TransferLists'
-import ToggleButtonNotEmpty from './components/ToggleList'
+import {Button_demo, BasicButtonGroup} from "./components/InputHandler_components/Button_demo"
+import ComboBox from './components/InputHandler_components/AutoComplete'
+import TextBox from './components/InputHandler_components/TextBox'
+import {Checkboxes, CheckboxLabels, IconCheckboxes} from './components/InputHandler_components/Checkboxall'
+import FloatingActionButtonExtendedSize from './components/InputHandler_components/Floating'
+import CustomizedRadios from './components/InputHandler_components/Radio_button'
+import HoverRating from './components/InputHandler_components/Ratings'
+import { MultipleSelect, MultipleSelectChip, DialogSelect } from './components/InputHandler_components/Select_box'
+import { MusicPlayerSlider, CustomizedSlider } from './components/InputHandler_components/Sliders'
+import CustomizedSwitches from './components/InputHandler_components/Switches'
+import TransferList from './components/InputHandler_components/TransferLists'
+import ToggleButtonNotEmpty from './components/InputHandler_components/ToggleList'
 
 function InputHandler() {
   const [count, setCount] = useState(0)
