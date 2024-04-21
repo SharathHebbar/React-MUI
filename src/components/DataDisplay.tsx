@@ -1,20 +1,9 @@
 
-import {
-    BackgroundLetterAvatars,
-    IconAvatars,
-    CustomSurplusAvatars
-} from "./components/DataDisplay_components/Avatars_demo"
+import { BackgroundLetterAvatars, IconAvatars, CustomSurplusAvatars } from "./components/DataDisplay_components/Avatars_demo"
 
-import {
-    BadgeAvatars,
-    BadgeMax,
-    AccessibleBadges
-} from "./components/DataDisplay_components/Badge_comp"
+import { BadgeAvatars, BadgeMax, AccessibleBadges } from "./components/DataDisplay_components/Badge_comp"
 
-import {
-    CustomDeleteIconChips,
-    ChipsArray
-} from "./components/DataDisplay_components/Chip_comp"
+import { CustomDeleteIconChips, ChipsArray } from "./components/DataDisplay_components/Chip_comp"
 
 import { FlexDivider, DividerText, ListDividers } from "./components/DataDisplay_components/Divider_comp"
 
@@ -23,6 +12,12 @@ import FontAwesomeSvgIconDemo from "./components/DataDisplay_components/Icons_co
 import MaterialIconsdemo from "./components/DataDisplay_components/Material_Icon"
 
 import { SwitchListSecondary, NestedList, CustomizedList } from "./components/DataDisplay_components/Lists_comp"
+
+import { CollapsibleTable, SpanningTable, ColumnGroupingTable } from "./components/DataDisplay_components/TableComp"
+
+import { BasicTooltip, TriggersTooltips } from "./components/DataDisplay_components/ToolTip"
+
+import Types from "./components/DataDisplay_components/TypographyComp"
 
 function DataDisplay(){
     return(
@@ -68,6 +63,21 @@ function DataDisplay(){
             <CustomizedList />
             <br /><br />
             For more info: <a href="https://mui.com/material-ui/react-list/">Lists</a>
+            <hr />
+            <CollapsibleTable /><br /><br />
+            <SpanningTable /><br /><br />
+            <ColumnGroupingTable /><br /><br />
+            <br /><br />
+            For more info: <a href="https://mui.com/material-ui/react-table/">Tables</a>
+            <hr />
+            <BasicTooltip /> <br /><br />
+            <TriggersTooltips /> <br /><br />
+            For more info: <a href="https://mui.com/material-ui/react-tooltip/">Tooltip</a>
+            <hr />
+            <Types />
+            <br /><br />
+            For more info: <a href="https://mui.com/material-ui/react-typography/">Typography</a>
+            <hr />
         </div>
         </>
     )

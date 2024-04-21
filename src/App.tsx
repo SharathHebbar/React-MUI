@@ -10,6 +10,8 @@ import {
 
 import InputHandler from './components/InputHandler'
 import DataDisplay from './components/DataDisplay'
+import Surfaces from './components/Surfaces'
+import Feedback from './components/Feedback'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
     <div>
         For Input Handler follow this path: <a href="/input_handler">Input Handler</a><br /><br />
         For Display Element follow this path: <a href="/display_element">Display Element</a><br /><br />
+        For Feedback Element follow this path: <a href="/feedback">Feedback</a><br /><br />
+        For Surface Element follow this path: <a href="/surfaces">Surface</a><br /><br />
     </div>
     <hr />
     <Router>
@@ -31,6 +35,16 @@ function App() {
         <Route 
           path='/display_element'
           element={<DataDisplay />}
+        >
+        </Route>
+        <Route 
+          path='/surfaces'
+          element={<Surfaces />}
+        >
+        </Route>
+        <Route 
+          path='/feedback'
+          element={<Feedback />}
         >
         </Route>
       </Routes>
