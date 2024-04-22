@@ -1,6 +1,5 @@
 import './App.css'
 
-import { useState } from 'react'
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,6 +11,8 @@ import InputHandler from './components/InputHandler'
 import DataDisplay from './components/DataDisplay'
 import Surfaces from './components/Surfaces'
 import Feedback from './components/Feedback'
+import Navigation from "./components/Navigation"
+import Layout from './components/LayoutsComp'
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
         For Display Element follow this path: <a href="/display_element">Display Element</a><br /><br />
         For Feedback Element follow this path: <a href="/feedback">Feedback</a><br /><br />
         For Surface Element follow this path: <a href="/surfaces">Surface</a><br /><br />
+        For Navigation Element follow this path: <a href="/navigation">Navigation</a><br /><br />
+        For Layouts Element follow this path: <a href="/layout">Layout</a><br /><br />
     </div>
     <hr />
     <Router>
@@ -45,6 +48,21 @@ function App() {
         <Route 
           path='/feedback'
           element={<Feedback />}
+        >
+        </Route>
+        <Route 
+          path='/feedback'
+          element={<Feedback />}
+        >
+        </Route>
+        <Route 
+          path='/navigation'
+          element={<Navigation />}
+        >
+        </Route>
+        <Route 
+          path='/layout'
+          element={<Layout />}
         >
         </Route>
       </Routes>
