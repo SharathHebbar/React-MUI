@@ -1,36 +1,39 @@
-
+import BoxSx from "./components/Layout_components/BoxComp"
+import SimpleContainer from "./components/Layout_components/ContainerComp"
+import AutoGridNoWrap from "./components/Layout_components/Gridv1"
+import NestedGridColumns from "./components/Layout_components/Gridv2"
+import DividerStack from "./components/Layout_components/Stack"
+import { TitlebarImageList, QuiltedImageList } from "./components/Layout_components/ImageList"
 
 function Layout(){
     return(
         <>
         <h2>Layout Component</h2>
         <hr />
-   
+        <BoxSx /><br />
         For more info: <a href="https://mui.com/material-ui/react-box/">Box</a>
         <hr />
-       
-        <br /><br />
-        For more info: <a href="https://mui.com/material-ui/react-breadcrumbs/">Container</a>
+        <SimpleContainer />
+        <br />
+        For more info: <a href="https://mui.com/material-ui/react-container/">Container</a>
         <hr />
-        
-        <br /><br />
-        For more info: <a href="https://mui.com/material-ui/react-drawer/">Grid</a>
+        <AutoGridNoWrap />
+        <br />
+        For more info: <a href="https://mui.com/material-ui/react-grid/">Grid</a>
         <hr />
-        
-        <br /><br />
-        For more info: <a href="https://mui.com/material-ui/react-menu/">Gridv2</a>
+        <NestedGridColumns />
+        <br />
+        For more info: <a href="https://mui.com/material-ui/react-grid2/">Gridv2</a>
         <hr />
-        
-        <br /><br />
-        For more info: <a href="https://mui.com/material-ui/react-pagination/">Stack</a>
+        <DividerStack />
+        <br />
+        For more info: <a href="https://mui.com/material-ui/react-stack/">Stack</a>
         <hr />
-        
-        <br /><br />
-        For more info: <a href="https://mui.com/material-ui/react-speed-dial/">Image List</a>
+        <QuiltedImageList />
+        <br />
+        <TitlebarImageList /><br />
+        For more info: <a href="https://mui.com/material-ui/react-image-list/">Image List</a>
         <hr />
-        
-        <br /><br />
-        For more info: <a href="https://mui.com/material-ui/react-stepper/">Hidden</a>
         
         </>
     )
